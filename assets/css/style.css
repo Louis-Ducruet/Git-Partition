@@ -129,12 +129,12 @@ main section {
     padding: 3rem 0;
 }
 
-main section:nth-child(2n) {
+main section:nth-child(2n + 1) {
     background-color: var(--primary);
     color: var(--background);
 }
 
-main section:nth-child(2n + 1) {
+main section:nth-child(2n) {
     background-color: var(--background);
     color: var(--text-color);
 }
@@ -197,29 +197,16 @@ main section:nth-child(2n + 1) {
 #footer .widget .column ul li a img{
     width: 3rem;
     height: auto;
-    transform: scale(1);
-    transition: .4s ease-in-out transform;
+    transform: scale(1) rotate(0);
+    transition: .3s ease-in-out transform;
 }
 
 #footer .widget .column ul li a:hover img {
-    transform: scale(0.9);
-    transition: .4s ease-in-out transform;
+    transform: scale(0.9) rotate(10deg);
+    transition: .3s ease-in-out transform;
 }
 
 #footer .copyright {
     text-align: center;
     font-weight: bold;
-}
-
-#footer .copyright p a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    transform: rotate(0);
-    transition: .3s ease-in-out transform;
-}
-
-#footer .copyright p a:hover {
-    transform: rotate(-0.05turn);
-    transition: .3s ease-in-out transform;
 }
