@@ -4,6 +4,7 @@
     --primary: #439241;
     --secondary: #3f75ad;
     --background: #dcdce8;
+    --bgc-navbar: rgba(220, 220, 232, 0.7);
     --text-color: #171732;
     --shadow: rgba(0, 0, 0, 0.8);
 }
@@ -13,6 +14,7 @@
         --primary: #87d480;
         --secondary: #5194ea;
         --background: #171732;
+        --bgc-navbar: rgba(23, 23, 50, 0.7);
         --text-color: #dcdce8;
         --shadow: rgba(127, 127, 127, 0.8);
     }
@@ -37,6 +39,7 @@ body {
 #header {
     padding: 0.5rem 1rem;
     box-shadow: 0 0 0.5rem 0 var(--shadow);
+    background-color: var(--bgc-navbar);
     backdrop-filter: blur(10px);
     width: 100%;
     position: fixed;
@@ -120,11 +123,27 @@ main {
     padding: 0 1rem;
 }
 
+/* ------------------------------------------------------ MAIN ------------------------------------------------------ */
+
+main section {
+    padding: 3rem 0;
+}
+
+main section:nth-child(2n) {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+main section:nth-child(2n + 1) {
+    background-color: var(--background);
+    color: var(--text-color);
+}
 /* ----------------------------------------------------- FOOTER ----------------------------------------------------- */
 
 #footer {
     background-color: var(--secondary);
     color: var(--background);
+    box-shadow: 0 0 0.5rem 0 var(--shadow);
     padding: 2rem 0;
 }
 
@@ -189,4 +208,18 @@ main {
 
 #footer .copyright {
     text-align: center;
+    font-weight: bold;
+}
+
+#footer .copyright p a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transform: rotate(0);
+    transition: .3s ease-in-out transform;
+}
+
+#footer .copyright p a:hover {
+    transform: rotate(-0.05turn);
+    transition: .3s ease-in-out transform;
 }
