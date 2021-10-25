@@ -170,19 +170,19 @@ p {
 /* to fix height ratio glitch */
 .ytb-video {
     box-shadow: 0 0 1rem 0 var(--shadow);
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
 
 .ytb-video iframe {
     border: none;
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 /* -------------------------------------------- BTN -------------------------------------------- */
@@ -200,7 +200,7 @@ p {
     transition: .3s ease-in-out all;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(0.95);
     transition: .3s ease-in-out all;
 }
@@ -256,7 +256,35 @@ p {
 /* ------------------------------------------- CARDS ------------------------------------------- */
 
 .card {
+    border-radius: 2rem;
+    max-width: 22rem;
+    min-height: 22rem;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem 0 var(--shadow);
+    background-image: url("https://images.unsplash.com/photo-1626539897275-73cbec67d24e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+}
 
+.card .card-content {
+    position: relative;
+    width: 100%;
+    height: 22rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--text-color);
+    color: var(--background);
+    transform: translateY(100%) translateY(-3.5rem) translateZ(0);
+    transition: .4s ease-in-out transform;
+}
+
+.card:hover .card-content {
+    transform: translateY(0%);
+    transition: .4s ease-in-out transform;
+}
+
+.card .card-content span {
+    font-size: 2rem;
+    color: var(--secondary);
 }
 
 /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
@@ -319,7 +347,7 @@ main section:nth-child(2n) {
     padding: 0.3rem 0;
 }
 
-#footer .widget .column ul li a{
+#footer .widget .column ul li a {
     color: inherit;
     text-decoration: solid underline transparent 0.15rem;
     font-size: 1.1rem;
@@ -331,7 +359,7 @@ main section:nth-child(2n) {
     transition: .4s ease-in-out all;
 }
 
-#footer .widget .column ul li a img{
+#footer .widget .column ul li a img {
     width: 3rem;
     height: auto;
     transform: scale(1) rotate(0);
