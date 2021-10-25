@@ -137,6 +137,9 @@ p {
 }
 
 /* ----------------------------------------------------- CLASSE ----------------------------------------------------- */
+.center {
+    text-align: center;
+}
 
 .container {
     max-width: 75rem;
@@ -155,14 +158,34 @@ p {
 }
 
 .col-illustration {
-    max-width: 20rem;
+    max-width: 24rem;
     width: 100%;
 }
 
 .col-content {
-    max-width: 44rem;
+    max-width: 40rem;
     width: 100%;
 }
+
+/* to fix height ratio glitch */
+.ytb-video {
+    box-shadow: 0 0 1rem 0 var(--shadow);
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.ytb-video iframe {
+    border: none;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* -------------------------------------------- BTN -------------------------------------------- */
 
 .btn {
     padding: 0.7rem 2.5rem;
@@ -228,6 +251,12 @@ p {
     background-color: var(--secondary);
     color: inherit;
     border-color: var(--secondary);
+}
+
+/* ------------------------------------------- CARDS ------------------------------------------- */
+
+.card {
+
 }
 
 /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
