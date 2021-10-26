@@ -5,6 +5,7 @@
     --secondary: #3f75ad;
     --background: #dcdce8;
     --bgc-navbar: rgba(220, 220, 232, 0.7);
+    --bgc-table: #2b2b46;
     --text-color: #171732;
     --shadow: rgba(0, 0, 0, 0.8);
 }
@@ -15,6 +16,7 @@
         --secondary: #5194ea;
         --background: #171732;
         --bgc-navbar: rgba(23, 23, 50, 0.7);
+        --bgc-table: #c8c8d4;
         --text-color: #dcdce8;
         --shadow: rgba(127, 127, 127, 0.8);
     }
@@ -285,6 +287,40 @@ p {
 .card .card-content span {
     font-size: 2rem;
     color: var(--secondary);
+}
+
+/* ------------------------------------------- Table ------------------------------------------- */
+
+.responsive-table {
+    /* Add scroll bar if screen is to small */
+    overflow-y: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 0.5rem 0 var(--shadow);
+}
+
+.table tr th {
+    background-color: var(--primary);
+    color: var(--background);
+    border: 0.05rem solid var(--background);
+    padding: 0.5rem 1rem;
+}
+
+.table tr td {
+    background-color: var(--text-color);
+    color: var(--background);
+    padding: 0.5rem 1rem;
+}
+
+.table tr:nth-child(2n) td {
+    background-color: var(--bgc-table);
+}
+
+.table tr:hover td {
+    background-color: var(--secondary);
 }
 
 /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
