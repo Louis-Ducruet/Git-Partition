@@ -361,6 +361,7 @@ p {
     width: 100%;
     background-color: var(--text-color);
     color: var(--background);
+    box-shadow: 0 0 0.5rem 0 var(--shadow);
     border-radius: 1rem;
     display: flex;
     align-items: center;
