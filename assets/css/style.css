@@ -312,7 +312,6 @@ p {
 .table tr td {
     background-color: var(--text-color);
     color: var(--background);
-    padding: 0.5rem 1rem;
 }
 
 .table tr:nth-child(2n) td {
@@ -321,6 +320,15 @@ p {
 
 .table tr:hover td {
     background-color: var(--secondary);
+}
+
+.table tr td a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    color: inherit;
+    text-decoration: none;
 }
 
 /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
