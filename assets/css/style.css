@@ -328,14 +328,17 @@ p {
 .table tr td {
     background-color: var(--text-color);
     color: var(--background);
+    transition: .3s ease-in-out background-color;
 }
 
 .table tr:nth-child(2n) td {
     background-color: var(--bgc-table);
+    transition: .3s ease-in-out background-color;
 }
 
 .table tr:hover td {
     background-color: var(--secondary);
+    transition: .3s ease-in-out background-color;
 }
 
 .table tr td a {
