@@ -5,7 +5,7 @@
     --secondary: #3f75ad;
     --background: #dcdce8;
     --bgc-navbar: rgba(220, 220, 232, 0.7);
-    --bgc-table: #2b2b46;
+    --bgc-table: #c8c8d4;
     --text-color: #171732;
     --shadow: rgba(0, 0, 0, 0.8);
 }
@@ -16,7 +16,7 @@
         --secondary: #5194ea;
         --background: #171732;
         --bgc-navbar: rgba(23, 23, 50, 0.7);
-        --bgc-table: #c8c8d4;
+        --bgc-table: #2b2b46;
         --text-color: #dcdce8;
         --shadow: rgba(127, 127, 127, 0.8);
     }
@@ -141,6 +141,7 @@ p {
 /* ----------------------------------------------------- CLASSE ----------------------------------------------------- */
 .center {
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .container {
@@ -310,35 +311,39 @@ p {
 .responsive-table {
     /* Add scroll bar if screen is to small */
     overflow-y: auto;
+    box-shadow: 0 0 1rem 0 var(--shadow);
 }
 
 .table {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 0 0.5rem 0 var(--shadow);
 }
 
 .table tr th {
-    background-color: var(--primary);
-    color: var(--background);
-    border: 0.05rem solid var(--background);
+    background-color: var(--bgc-table);
+    color: var(--text-color);
     padding: 0.5rem 1rem;
 }
 
 .table tr td {
-    background-color: var(--text-color);
-    color: var(--background);
-    transition: .3s ease-in-out background-color;
+    background-color: var(--background);
+    color: var(--text-color);
+    transition: .3s ease-in-out all;
+}
+
+.table tr td:nth-child(n+3) {
+    text-align: center;
 }
 
 .table tr:nth-child(2n) td {
     background-color: var(--bgc-table);
-    transition: .3s ease-in-out background-color;
+    transition: .3s ease-in-out all;
 }
 
 .table tr:hover td {
     background-color: var(--secondary);
-    transition: .3s ease-in-out background-color;
+    color: var(--background);
+    transition: .3s ease-in-out all;
 }
 
 .table tr td a {
@@ -349,7 +354,38 @@ p {
     color: inherit;
     text-decoration: none;
 }
+/* ------------------------------------------- Ticket ------------------------------------------ */
 
+.ticket {
+    max-width: 35rem;
+    width: 100%;
+    background-color: var(--text-color);
+    color: var(--background);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.ticket img {
+    width: 10rem;
+    height: 100%;
+    background-color: var(--primary);
+}
+
+.ticket .ticket-content {
+    width: 25rem;
+    padding: 0.5rem 1rem;
+    max-height: 10rem;
+    overflow-y: auto;
+}
+
+.ticket .ticket-content span {
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
 /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
 
 main section {
