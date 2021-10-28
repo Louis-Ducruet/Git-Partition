@@ -35,6 +35,22 @@ body {
     font-family: 'Livvic', sans-serif;
 }
 
+/* --------------------------------------------------- SCROLL BAR --------------------------------------------------- */
+
+/* Customize Scroll bar */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+    border-radius: 0.5rem;
+}
+
 /* ----------------------------------------------------- HEADER ----------------------------------------------------- */
 /* ------------------------------------------ TOP-BAR ------------------------------------------ */
 
