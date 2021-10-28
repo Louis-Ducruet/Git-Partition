@@ -193,7 +193,6 @@ form textarea.form-control {
 }
 
 form .btn {
-    color: var(--background);
     display: block;
     margin: 0 auto;
 }
