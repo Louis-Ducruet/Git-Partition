@@ -5,7 +5,7 @@
     --secondary: #3f75ad;
     --background: #dcdce8;
     --bgc-navbar: rgba(220, 220, 232, 0.7);
-    --bgc-table: #c8c8d4;
+    --bgc-alt: #c8c8d4;
     --text-color: #171732;
     --shadow: rgba(0, 0, 0, 0.8);
 }
@@ -16,7 +16,7 @@
         --secondary: #5194ea;
         --background: #171732;
         --bgc-navbar: rgba(23, 23, 50, 0.7);
-        --bgc-table: #2b2b46;
+        --bgc-alt: #2b2b46;
         --text-color: #dcdce8;
         --shadow: rgba(127, 127, 127, 0.8);
     }
@@ -154,6 +154,50 @@ p {
     margin: 0.5rem 0;
 }
 
+/* -------------------------------------------- FORM ------------------------------------------- */
+
+form.form-section {
+    background-color: var(--background);
+    color: var(--text-color);
+    box-shadow: 0 0 1rem 0 var(--shadow);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+form label,
+form .form-control{
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+form .form-control {
+    padding: 0.5rem 1rem;
+    background-color: var(--bgc-alt);
+    color: var(--text-color);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+form .form-control:valid {
+    color: var(--primary);
+}
+
+form .form-control::placeholder {
+    color: var(--text-color);
+}
+
+form textarea.form-control {
+    resize: vertical;
+    min-height: 2rem;
+}
+
+form .btn {
+    color: var(--background);
+    display: block;
+    margin: 0 auto;
+}
+
 /* ----------------------------------------------------- CLASSE ----------------------------------------------------- */
 .center {
     text-align: center;
@@ -226,7 +270,7 @@ p {
 
 .btn-primary {
     background-color: var(--primary);
-    color: inherit;
+    color: var(--background);
     border-color: var(--primary);
 }
 
@@ -244,13 +288,13 @@ p {
 
 .btn-outline-primary:hover {
     background-color: var(--primary);
-    color: inherit;
+    color: var(--background);
     border-color: var(--primary);
 }
 
 .btn-secondary {
     background-color: var(--secondary);
-    color: inherit;
+    color: var(--background);
     border-color: var(--secondary);
 }
 
@@ -268,7 +312,7 @@ p {
 
 .btn-outline-secondary:hover {
     background-color: var(--secondary);
-    color: inherit;
+    color: var(--background);
     border-color: var(--secondary);
 }
 
@@ -290,8 +334,8 @@ p {
     width: 100%;
     height: 22rem;
     padding: 0.5rem 1.5rem;
-    background-color: var(--text-color);
-    color: var(--background);
+    background-color: var(--bgc-alt);
+    color: var(--text-color);
     /* Fix glitch if content is > height of card-content */
     overflow-y: auto;
     transform: translateY(100%) translateY(-3.5rem) translateZ(0);
@@ -313,7 +357,7 @@ p {
 
 .card .card-content span:first-child {
     font-size: 2rem;
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .card .card-content a.btn {
@@ -336,7 +380,7 @@ p {
 }
 
 .table tr th {
-    background-color: var(--bgc-table);
+    background-color: var(--bgc-alt);
     color: var(--text-color);
     padding: 0.5rem 1rem;
 }
@@ -352,7 +396,7 @@ p {
 }
 
 .table tr:nth-child(2n) td {
-    background-color: var(--bgc-table);
+    background-color: var(--bgc-alt);
     transition: .3s ease-in-out all;
 }
 
@@ -375,8 +419,8 @@ p {
 .ticket {
     max-width: 35rem;
     width: 100%;
-    background-color: var(--text-color);
-    color: var(--background);
+    background-color: var(--bgc-alt);
+    color: var(--text-color);
     box-shadow: 0 0 0.5rem 0 var(--shadow);
     border-radius: 1rem;
     display: flex;
@@ -408,7 +452,7 @@ p {
 
 .ticket .ticket-content span {
     font-size: 1.5rem;
-    color: var(--secondary);
+    color: var(--primary);
 }
 /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
 

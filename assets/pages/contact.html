@@ -50,65 +50,139 @@
                         odio pariatur provident quaerat quia quidem quisquam rerum soluta unde. A commodi doloremque
                         error illum itaque iure laudantium nemo numquam porro quas.
                     </p>
-                    <a href="#!" class="btn btn-outline-secondary">Nous contacter</a>
-                    <a href="#!" class="btn btn-secondary">Une partition ?</a>
+                    <a href="#contact-form-contact" class="btn btn-outline-secondary">Nous contacter</a>
+                    <a href="#contact-form-partition" class="btn btn-secondary">Une partition ?</a>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="contact-form-contact">
         <div class="container">
-            <h2>Titre de la section</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, necessitatibus, praesentium. Ab doloremque et
-                vero. Amet blanditiis corporis dolores ex excepturi, ipsa minima nam odio perspiciatis quam qui quia
-                repudiandae, sit vero voluptatem? Assumenda atque deleniti eos error excepturi fugit, harum impedit optio
-                perspiciatis porro possimus, recusandae rerum ut veritatis?
-            </p>
+            <h2 class="center">Nous contacter</h2>
+            <p>(*) : Ce champ est un champ obligatoire.</p>
+            <form action="?" method="POST" class="form-section">
+                <label for="from-contact-last-name">Votre nom : (*)</label>
+                <input type="text"
+                       name="last-name"
+                       id="from-contact-last-name"
+                       class="form-control"
+                       value=""
+                       placeholder="Dupont"
+                       required
+                />
+                <label for="from-contact-first-name">Votre prénom :</label>
+                <input type="text"
+                       name="first-name"
+                       id="from-contact-first-name"
+                       class="form-control"
+                       value=""
+                       placeholder="Jean"
+                />
+                <label for="from-contact-email">Votre adresse e-mail : (*)</label>
+                <input type="email"
+                       name="email"
+                       id="from-contact-email"
+                       class="form-control"
+                       value=""
+                       placeholder="jean@dupont.fr"
+                       required
+                />
+                <label for="from-contact-object">L'objet de votre message : (*)</label>
+                <input type="text"
+                       name="object"
+                       id="from-contact-object"
+                       class="form-control"
+                       value=""
+                       placeholder="Ajout d'une fonctionnalité"
+                       required
+                />
+                <label for="from-contact-message">Votre message : (*)</label>
+                <textarea
+                        name="message"
+                        id="from-contact-message"
+                        class="form-control"
+                        required
+                        rows="10"
+                ></textarea>
+                <button type="submit" class="btn btn-primary">Envoyer votre message</button>
+            </form>
         </div>
     </section>
-    <section>
+    <section id="contact-form-partition">
         <div class="container">
-            <h2>Titre de la section</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, necessitatibus, praesentium. Ab doloremque et
-                vero. Amet blanditiis corporis dolores ex excepturi, ipsa minima nam odio perspiciatis quam qui quia
-                repudiandae, sit vero voluptatem? Assumenda atque deleniti eos error excepturi fugit, harum impedit optio
-                perspiciatis porro possimus, recusandae rerum ut veritatis?
-            </p>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2>Titre de la section</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, necessitatibus, praesentium. Ab doloremque et
-                vero. Amet blanditiis corporis dolores ex excepturi, ipsa minima nam odio perspiciatis quam qui quia
-                repudiandae, sit vero voluptatem? Assumenda atque deleniti eos error excepturi fugit, harum impedit optio
-                perspiciatis porro possimus, recusandae rerum ut veritatis?
-            </p>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2>Titre de la section</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, necessitatibus, praesentium. Ab doloremque et
-                vero. Amet blanditiis corporis dolores ex excepturi, ipsa minima nam odio perspiciatis quam qui quia
-                repudiandae, sit vero voluptatem? Assumenda atque deleniti eos error excepturi fugit, harum impedit optio
-                perspiciatis porro possimus, recusandae rerum ut veritatis?
-            </p>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2>Titre de la section</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, necessitatibus, praesentium. Ab doloremque et
-                vero. Amet blanditiis corporis dolores ex excepturi, ipsa minima nam odio perspiciatis quam qui quia
-                repudiandae, sit vero voluptatem? Assumenda atque deleniti eos error excepturi fugit, harum impedit optio
-                perspiciatis porro possimus, recusandae rerum ut veritatis?
-            </p>
+            <h2 class="center">Une partition à proposer ?</h2>
+            <p>(*) : Ce champ est un champ obligatoire.</p>
+            <form action="?" method="POST" class="form-section" enctype="multipart/form-data">
+                <label for="from-partition-last-name">Votre nom : (*)</label>
+                <input type="text"
+                       name="last-name"
+                       id="from-partition-last-name"
+                       class="form-control"
+                       value=""
+                       placeholder="Dupont"
+                       required
+                />
+                <label for="from-partition-first-name">Votre prénom :</label>
+                <input type="text"
+                       name="first-name"
+                       id="from-partition-first-name"
+                       class="form-control"
+                       value=""
+                       placeholder="Jean"
+                />
+                <label for="from-partition-email">Votre adresse e-mail : (*)</label>
+                <input type="email"
+                       name="email"
+                       id="from-partition-email"
+                       class="form-control"
+                       value=""
+                       placeholder="jean@dupont.fr"
+                       required
+                />
+                <label for="from-partition-website">Votre site web :</label>
+                <input type="text"
+                       name="website"
+                       id="from-partition-website"
+                       class="form-control"
+                       value=""
+                       placeholder="www.google.com"
+                />
+                <label for="from-partition-style">Le style de la partition : (*)</label>
+                <select name="style" id="from-partition-style" required class="form-control">
+                    <option value="" selected disabled>Choisir un style</option>
+                    <option value="0">Pop</option>
+                    <option value="1">Classique</option>
+                    <option value="2">Baroque</option>
+                    <option value="3">Révolte</option>
+                </select>
+                <label for="from-partition-difficulty">La difficulté de la partition : (*)</label>
+                <input type="range"
+                       name="difficulty"
+                       id="from-partition-difficulty"
+                       class="form-control"
+                       min="0"
+                       max="5"
+                       required
+                />
+                <label for="from-partition-part-name">Le nom de la chanson : (*)</label>
+                <input type="text"
+                       name="part-name"
+                       id="from-partition-part-name"
+                       class="form-control"
+                       value=""
+                       placeholder="La vie en rose"
+                       required
+                />
+                <label for="from-partition-file">Le fichier pdf : (*)</label>
+                <input type="file"
+                       name="file"
+                       id="from-partition-file"
+                       class="form-control"
+                       accept="application/pdf"
+                       required
+                />
+                <button type="submit" class="btn btn-secondary">Envoyer votre message</button>
+            </form>
         </div>
     </section>
 </main>
@@ -142,14 +216,15 @@
             </div>
             <div class="column">
                 <span>S'abonner à la newsletter</span>
-                <form action="#!" method="POST">
-                    <label for="news-email">Votre e-mail :</label>
+                <form action="?" method="POST">
+                    <label for="form-footer-email">Votre e-mail :</label>
                     <input type="email"
-                           name="e-mail"
-                           id="news-email"
+                           name="email"
+                           id="form-footer-email"
+                           class="form-control"
                            placeholder="jean@dupont.fr"
                            required>
-                    <button type="submit">S'inscrire</button>
+                    <button type="submit" class="btn btn-outline-primary">S'inscrire</button>
                 </form>
             </div>
             <div class="column">
