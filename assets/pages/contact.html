@@ -61,23 +61,29 @@
             <h2 class="center">Nous contacter</h2>
             <p>(*) : Ce champ est un champ obligatoire.</p>
             <form action="?" method="POST" class="form-section">
-                <label for="from-contact-last-name">Votre nom : (*)</label>
-                <input type="text"
-                       name="last-name"
-                       id="from-contact-last-name"
-                       class="form-control"
-                       value=""
-                       placeholder="Dupont"
-                       required
-                />
-                <label for="from-contact-first-name">Votre prénom :</label>
-                <input type="text"
-                       name="first-name"
-                       id="from-contact-first-name"
-                       class="form-control"
-                       value=""
-                       placeholder="Jean"
-                />
+                <div class="wrapper-no-gap">
+                    <div class="col-form">
+                        <label for="from-contact-last-name">Votre nom : (*)</label>
+                        <input type="text"
+                               name="last-name"
+                               id="from-contact-last-name"
+                               class="form-control"
+                               value=""
+                               placeholder="Dupont"
+                               required
+                        />
+                    </div>
+                    <div class="col-form">
+                        <label for="from-contact-first-name">Votre prénom :</label>
+                        <input type="text"
+                               name="first-name"
+                               id="from-contact-first-name"
+                               class="form-control"
+                               value=""
+                               placeholder="Jean"
+                        />
+                    </div>
+                </div>
                 <label for="from-contact-email">Votre adresse e-mail : (*)</label>
                 <input type="email"
                        name="email"
@@ -113,23 +119,29 @@
             <h2 class="center">Une partition à proposer ?</h2>
             <p>(*) : Ce champ est un champ obligatoire.</p>
             <form action="?" method="POST" class="form-section" enctype="multipart/form-data">
-                <label for="from-partition-last-name">Votre nom : (*)</label>
-                <input type="text"
-                       name="last-name"
-                       id="from-partition-last-name"
-                       class="form-control"
-                       value=""
-                       placeholder="Dupont"
-                       required
-                />
-                <label for="from-partition-first-name">Votre prénom :</label>
-                <input type="text"
-                       name="first-name"
-                       id="from-partition-first-name"
-                       class="form-control"
-                       value=""
-                       placeholder="Jean"
-                />
+                <div class="wrapper-no-gap">
+                    <div class="col-form">
+                        <label for="from-partition-last-name">Votre nom : (*)</label>
+                        <input type="text"
+                               name="last-name"
+                               id="from-partition-last-name"
+                               class="form-control"
+                               value=""
+                               placeholder="Dupont"
+                               required
+                        />
+                    </div>
+                    <div class="col-form">
+                        <label for="from-partition-first-name">Votre prénom :</label>
+                        <input type="text"
+                               name="first-name"
+                               id="from-partition-first-name"
+                               class="form-control"
+                               value=""
+                               placeholder="Jean"
+                        />
+                    </div>
+                </div>
                 <label for="from-partition-email">Votre adresse e-mail : (*)</label>
                 <input type="email"
                        name="email"
@@ -147,23 +159,29 @@
                        value=""
                        placeholder="www.google.com"
                 />
-                <label for="from-partition-style">Le style de la partition : (*)</label>
-                <select name="style" id="from-partition-style" required class="form-control">
-                    <option value="" selected disabled>Choisir un style</option>
-                    <option value="0">Pop</option>
-                    <option value="1">Classique</option>
-                    <option value="2">Baroque</option>
-                    <option value="3">Révolte</option>
-                </select>
-                <label for="from-partition-difficulty">La difficulté de la partition : (*)</label>
-                <input type="range"
-                       name="difficulty"
-                       id="from-partition-difficulty"
-                       class="form-control"
-                       min="0"
-                       max="5"
-                       required
-                />
+                <div class="wrapper-no-gap">
+                    <div class="col-form">
+                        <label for="from-partition-style">Le style de la partition : (*)</label>
+                        <select name="style" id="from-partition-style" required class="form-control">
+                            <option value="" selected disabled>Choisir un style</option>
+                            <option value="0">Pop</option>
+                            <option value="1">Classique</option>
+                            <option value="2">Baroque</option>
+                            <option value="3">Révolte</option>
+                        </select>
+                    </div>
+                    <div class="col-form">
+                        <label for="from-partition-difficulty">La difficulté de la partition : (*)</label>
+                        <input type="range"
+                               name="difficulty"
+                               id="from-partition-difficulty"
+                               class="form-control"
+                               min="0"
+                               max="5"
+                               required
+                        />
+                    </div>
+                </div>
                 <label for="from-partition-part-name">Le nom de la chanson : (*)</label>
                 <input type="text"
                        name="part-name"
