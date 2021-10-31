@@ -3,9 +3,9 @@
 :root {
     --primary: #439241;
     --secondary: #3f75ad;
-    --background: #dcdce8;
-    --bgc-navbar: rgba(220, 220, 232, 0.7);
-    --bgc-alt: #c8c8d4;
+    --background: #e6e6f2;
+    --bgc-navbar: rgba(230, 230, 242, 0.7);
+    --bgc-alt: #d2d2de;
     --text-color: #171732;
     --shadow: rgba(0, 0, 0, 0.8);
 }
@@ -179,12 +179,8 @@ form .form-control {
     border-radius: 0.5rem;
 }
 
-form .form-control:valid {
-    color: var(--primary);
-}
-
 form .form-control::placeholder {
-    color: var(--text-color);
+    color: var(--secondary);
 }
 
 form textarea.form-control {
@@ -289,13 +285,13 @@ form .btn {
 }
 
 .btn-primary:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--background);
     color: var(--primary);
     border-color: var(--primary);
 }
 
 .btn-outline-primary {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--background);
     color: var(--primary);
     border-color: var(--primary);
 }
@@ -313,13 +309,13 @@ form .btn {
 }
 
 .btn-secondary:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--background);
     color: var(--secondary);
     border-color: var(--secondary);
 }
 
 .btn-outline-secondary {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--background);
     color: var(--secondary);
     border-color: var(--secondary);
 }
