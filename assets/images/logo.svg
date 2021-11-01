@@ -1,7 +1,108 @@
 <svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
     <defs>
         <style>
-            .cls-1{fill:#45413c;opacity:0.15;}.cls-2{fill:#ffaa54;}.cls-3{fill:#fc9;}.cls-10,.cls-11,.cls-4,.cls-8,.cls-9{fill:none;}.cls-4,.cls-7{stroke:#45413c;}.cls-10,.cls-11,.cls-4,.cls-7,.cls-8,.cls-9{stroke-linecap:round;stroke-linejoin:round;}.cls-5{fill:#f0d5a8;}.cls-6{fill:#f7e5c6;}.cls-7{fill:#fff;}.cls-8{stroke:#48cf3e;}.cls-9{stroke:#ff4064;}.cls-10{stroke:#ffb700;}.cls-11{stroke:#00aed9;}
+            .cls-1{
+                fill:#45413c;
+                opacity:0.15;
+            }
+
+            .cls-2{
+                fill:#ffaa54;
+            }
+
+            .cls-3{
+                fill:#fc9;
+            }
+
+            .cls-10,
+            .cls-11,
+            .cls-4,
+            .cls-8,
+            .cls-9{
+                fill:none;
+            }
+
+            .cls-4,
+            .cls-7{
+                stroke:#45413c;
+            }
+
+            .cls-10,
+            .cls-11,
+            .cls-4,
+            .cls-7,
+            .cls-8,
+            .cls-9{
+                stroke-linecap:round;
+                stroke-linejoin:round;
+            }
+
+            .cls-5{
+                fill:#f0d5a8;
+            }
+
+            .cls-6{
+                fill:#f7e5c6;
+            }
+
+            .cls-7{
+                fill:#fff;
+            }
+
+            .cls-8{
+                stroke:#48cf3e;
+            }
+
+            .cls-9{
+                stroke:#ff4064;
+            }
+
+            .cls-10{
+                stroke:#ffb700;
+            }
+
+            .cls-11{
+                stroke:#00aed9;
+            }
+
+            .notes{
+                animation: apparition 1.0s infinite linear;
+            }
+
+            .notes:nth-child(3n){
+                animation: apparition 1.2s infinite reverse linear;
+            }
+
+            .notes:nth-child(3n+1){
+                animation: apparition 0.8s infinite linear;
+            }
+
+            .blue-cross{
+                animation: apparition .5s infinite linear;
+            }
+
+            .blue-cross:nth-child(2n){
+                animation: apparition .5s infinite reverse linear;
+            }
+
+            @keyframes apparition {
+                from, to {
+                    transition-timing-function: ease-in-out;
+                    opacity: 1;
+                }
+                35% {
+                    transition-timing-function: ease-in-out;
+                    opacity: 1;
+                }
+                50% {
+                    transition-timing-function: ease-in-out;
+                    opacity: 0;
+                }
+                85% {
+                    transition-timing-function: ease-in-out;
+                    opacity: 0;
+                }
+            }
         </style>
     </defs>
     <title>694-guitar</title>
@@ -34,7 +135,7 @@
         <path class="cls-7" d="M24.63,27.69l-3-2.15a1.05,1.05,0,0,0-1.23,1.71l3,2.15a1.05,1.05,0,0,0,1.23-1.71Z"/>
         <line id="_Path_10" class="cls-4" x1="36.02" y1="7.4" x2="38.2" y2="11.57"/>
         <line id="_Path_11" class="cls-4" x1="38.84" y1="6.2" x2="40.75" y2="9.84"/>
-        <g id="_Group_3">
+        <g id="_Group_3" class="notes">
             <path id="_Path_12" class="cls-8"
                   d="M38.84,23.86a1.27,1.27,0,0,1-2.53,0,1.27,1.27,0,1,1,2.53,0Z"/>
             <path id="_Path_13" class="cls-8"
@@ -42,18 +143,18 @@
             <polyline id="_Path_14" class="cls-8"
                       points="38.84 23.86 38.84 18.16 45.18 15.62 45.18 22.59"/>
         </g>
-        <g id="_Group_4">
+        <g id="_Group_4" class="notes">
             <path id="_Path_15" class="cls-9"
                   d="M36.62,44.38A1.68,1.68,0,1,1,35,42.71,1.68,1.68,0,0,1,36.62,44.38Z"/>
             <polyline id="_Path_16" class="cls-9"
                       points="36.62 44.38 36.62 36.86 39.13 38.53"/>
         </g>
-        <g id="_Group_5">
+        <g id="_Group_5" class="notes">
             <path id="_Path_17" class="cls-10"
                   d="M10.15,14.28a1.51,1.51,0,1,1-1.51-1.52A1.51,1.51,0,0,1,10.15,14.28Z"/>
             <polyline id="_Path_18" class="cls-10" points="10.15 14.28 10.15 7.46 12.42 8.98"/>
         </g>
-        <g id="_Group_6">
+        <g id="_Group_6" class="blue-cross">
             <line id="_Path_19" class="cls-11" x1="24.06" y1="5.68" x2="24.06" y2="5.08"/>
             <line id="_Path_20" class="cls-11" x1="25.33" y1="6.2" x2="25.75" y2="5.78"/>
             <line id="_Path_21" class="cls-11" x1="25.85" y1="7.46" x2="26.44" y2="7.46"/>
@@ -63,23 +164,23 @@
             <line id="_Path_25" class="cls-11" x1="22.28" y1="7.46" x2="21.68" y2="7.46"/>
             <line id="_Path_26" class="cls-11" x1="22.8" y1="6.2" x2="22.38" y2="5.78"/>
         </g>
-        <g id="_Group_7">
+        <g id="_Group_7" class="blue-cross">
             <line id="_Path_27" class="cls-11" x1="4.62" y1="23.41" x2="4.62" y2="20.23"/>
             <line id="_Path_28" class="cls-11" x1="3.03" y1="21.82" x2="6.21" y2="21.82"/>
         </g>
-        <g id="_Group_8">
+        <g id="_Group_8" class="blue-cross">
             <line id="_Path_29" class="cls-11" x1="43.91" y1="32.29" x2="43.91" y2="29.12"/>
             <line id="_Path_30" class="cls-11" x1="42.33" y1="30.7" x2="45.5" y2="30.7"/>
         </g>
-        <g id="_Group_9">
+        <g id="_Group_9" class="blue-cross">
             <line id="_Path_31" class="cls-11" x1="33.27" y1="34.71" x2="33.27" y2="33.13"/>
             <line id="_Path_32" class="cls-11" x1="32.48" y1="33.92" x2="34.07" y2="33.92"/>
         </g>
-        <g id="_Group_10">
+        <g id="_Group_10" class="blue-cross">
             <line id="_Path_33" class="cls-11" x1="20.85" y1="15.62" x2="20.85" y2="14.03"/>
             <line id="_Path_34" class="cls-11" x1="20.06" y1="14.83" x2="21.65" y2="14.83"/>
         </g>
-        <g id="_Group_11">
+        <g id="_Group_11" class="blue-cross">
             <line id="_Path_35" class="cls-11" x1="3.83" y1="41.41" x2="3.83" y2="39.83"/>
             <line id="_Path_36" class="cls-11" x1="3.03" y1="40.62" x2="4.62" y2="40.62"/>
         </g>
