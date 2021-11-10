@@ -1,0 +1,40 @@
+.ticket {
+  max-width: 35rem;
+  width: 100%;
+  background-color: var(--bgc-alt);
+  box-shadow: 0 0 0.5rem 0 var(--shadow);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  transition: .3s ease-in-out box-shadow;
+
+  &:hover {
+    box-shadow: 0 0 1rem 0 var(--shadow);
+    transition: .3s ease-in-out box-shadow;
+  }
+
+  .ticket-image {
+    background-color: var(--primary);
+    padding: 0.5rem;
+
+    img {
+      display: block;
+      margin: auto 0;
+      height: 100%;
+      filter: drop-shadow(0 0 0.2rem var(--shadow));
+    }
+  }
+
+  .ticket-content {
+    padding: 1rem;
+    display: block;
+    margin: auto 0;
+    height: fit-content;
+
+    span {
+      color: var(--primary);
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+:root {
+  /* Light Theme */
+  --primary: #439241;
+  --secondary: #3f75ad;
+  --background: #e6e6f2;
+  --bgc-navbar: rgba(230, 230, 242, 0.7);
+  --bgc-alt: #d2d2de;
+  --text-color: #171732;
+  --shadow: rgba(0, 0, 0, 0.8);
+
+  /* Dark Theme */
+  @media (prefers-color-scheme: dark) {
+    --primary: #87d480;
+    --secondary: #5194ea;
+    --background: #171732;
+    --bgc-navbar: rgba(23, 23, 50, 0.7);
+    --bgc-alt: #2b2b46;
+    --text-color: #dcdce8;
+    --shadow: rgba(127, 127, 127, 0.8);
+  }
+}
+

@@ -1,0 +1,54 @@
+/* ------------------------------------------------------ DOM ------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: 'Livvic', sans-serif;
+}
+
+main {
+  /* To fix invisible content behind the navbar */
+  padding-top: 4.5rem;
+  /* ------ Default style for some tag ------*/
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1,
+  h2 {
+    color: inherit;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+
+  p {
+    color: inherit;
+    margin: 0.5rem 0;
+  }
+}
+
+
+
+/* --------------------------------------------------- SCROLL BAR --------------------------------------------------- */
+
+/* Customize Scroll bar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  border-radius: 0.5rem;
+}
