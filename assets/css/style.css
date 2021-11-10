@@ -25,7 +25,8 @@
 /* ------------------------------------------------------ DOM ------------------------------------------------------- */
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-weight: 400;
 }
 
 body {
@@ -175,12 +176,13 @@ form .form-control {
     padding: 0.5rem 1rem;
     background-color: var(--bgc-alt);
     color: var(--text-color);
+    font-weight: 600;
     border: none;
     border-radius: 0.5rem;
 }
 
 form .form-control::placeholder {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 form textarea.form-control {
@@ -423,6 +425,7 @@ form .btn {
     height: 100%;
     padding: 0.5rem 1rem;
     color: inherit;
+    font-weight: 600;
     text-decoration: none;
 }
 /* ------------------------------------------- Ticket ------------------------------------------ */
@@ -539,8 +542,9 @@ main section:nth-child(2n) {
 
 #footer .widget .column ul li a {
     color: inherit;
-    text-decoration: solid underline transparent 0.15rem;
+    text-decoration: solid underline transparent 0.2rem;
     font-size: 1.1rem;
+    font-weight: 600;
     transition: .4s ease-in-out all;
 }
 
