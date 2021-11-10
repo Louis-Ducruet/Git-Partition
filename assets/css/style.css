@@ -25,7 +25,7 @@
 /* ------------------------------------------------------ DOM ------------------------------------------------------- */
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 body {
@@ -243,6 +243,7 @@ form .btn {
 /* to fix height ratio glitch */
 .ytb-video {
     box-shadow: 0 0 1rem 0 var(--shadow);
+    border-radius: 0.5rem;
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
@@ -285,13 +286,13 @@ form .btn {
 }
 
 .btn-primary:hover {
-    background-color: var(--bgc-alt);
+    background-color: var(--background);
     color: var(--primary);
     border-color: var(--primary);
 }
 
 .btn-outline-primary {
-    background-color: var(--bgc-alt);
+    background-color: var(--background);
     color: var(--primary);
     border-color: var(--primary);
 }
@@ -309,13 +310,13 @@ form .btn {
 }
 
 .btn-secondary:hover {
-    background-color: var(--bgc-alt);
+    background-color: var(--background);
     color: var(--secondary);
     border-color: var(--secondary);
 }
 
 .btn-outline-secondary {
-    background-color: var(--bgc-alt);
+    background-color: var(--background);
     color: var(--secondary);
     border-color: var(--secondary);
 }
