@@ -28,18 +28,58 @@
           font-weight: 600;
           transition: .4s ease-in-out all;
 
-          img {
+          svg {
             width: 3rem;
             height: auto;
             transform: scale(1) rotate(0);
             transition: .3s ease-in-out transform;
+
+            .fil1 {
+              fill: #FFF;
+            }
+
+            &#svg-facebook {
+              .fil0 {
+                fill: #3B5999;
+              }
+
+              .fil2 {
+                fill: #30487C;
+              }
+            }
+
+            &#svg-instagram {
+              .fil0 {
+                fill: #6A453B;
+              }
+
+              .fil2 {
+                fill: #4D322B;
+              }
+            }
+
+            &#svg-twitter {
+              .fil0 {
+                fill: #6BCFED;
+              }
+
+              .fil2 {
+                fill: #57A9C2;
+              }
+            }
+
+            &#svg-github {
+              .fil0 {
+                fill: #171732;
+              }
+            }
           }
 
           &:hover {
             text-decoration-color: var(--primary);
             transition: .4s ease-in-out all;
 
-            img {
+            svg {
               transform: scale(0.9) rotate(10deg);
               transition: .3s ease-in-out transform;
             }

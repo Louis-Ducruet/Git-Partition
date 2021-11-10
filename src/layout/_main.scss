@@ -15,27 +15,28 @@ body {
 main {
   /* To fix invisible content behind the navbar */
   padding-top: 4.5rem;
-  /* ------ Default style for some tag ------*/
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  h1,
-  h2 {
-    color: inherit;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0.5rem 0;
-  }
-
-  p {
-    color: inherit;
-    margin: 0.5rem 0;
-  }
 }
 
+/* ------ Default style for some tag ------*/
 
+img, svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2 {
+  color: inherit;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+p {
+  color: inherit;
+  margin: 0.5rem 0;
+}
 
 /* --------------------------------------------------- SCROLL BAR --------------------------------------------------- */
 
