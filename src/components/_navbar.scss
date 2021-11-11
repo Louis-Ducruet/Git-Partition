@@ -26,11 +26,11 @@
         color: inherit;
         font-size: 1.3rem;
         transform: scale(1);
-        transition: .3s ease-in-out transform;
+        transition: .3s ease-in-out all;
 
         &:hover {
           transform: scale(0.95);
-          transition: .3s ease-in-out transform;
+          transition: .3s ease-in-out all;
         }
 
         svg {

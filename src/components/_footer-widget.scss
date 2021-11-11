@@ -28,6 +28,10 @@
           font-weight: 600;
           transition: .4s ease-in-out all;
 
+          span {
+            color: var(--primary);
+          }
+
           svg {
             width: 3rem;
             height: auto;

@@ -24,7 +24,7 @@
       transform: translateY(100%) translateY(-6rem) translateZ(0);
     }
 
-    span {
+    & > span {
       display: block;
 
       &:first-child {

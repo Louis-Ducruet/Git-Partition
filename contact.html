@@ -93,8 +93,14 @@
                         Vous avez un message à nous transmettre, une partition à nous soumettre. Remplissez le bon
                         formulaire et nous vous répondrons dans les plus brefs délais.
                     </p>
-                    <a href="#contact-form-contact" class="btn btn-outline-secondary">Nous contacter</a>
-                    <a href="#contact-form-partition" class="btn btn-secondary">Une partition ?</a>
+                    <a href="#contact-form-contact" class="btn btn-outline-secondary">
+                        <span class="fas fa-comment-dots"></span>
+                        Nous contacter
+                    </a>
+                    <a href="#contact-form-partition" class="btn btn-secondary">
+                        <span class="fas fa-file-alt"></span>
+                        Une partition ?
+                    </a>
                 </div>
             </div>
         </div>
@@ -106,7 +112,10 @@
             <form action="?" method="POST" class="form-section">
                 <div class="wrapper-no-gap">
                     <div class="col-form">
-                        <label for="from-contact-last-name">Votre nom : (*)</label>
+                        <label for="from-contact-last-name">
+                            <span class="fas fa-user"></span>
+                            Votre nom : (*)
+                        </label>
                         <input type="text"
                                name="last-name"
                                id="from-contact-last-name"
@@ -117,7 +126,10 @@
                         />
                     </div>
                     <div class="col-form">
-                        <label for="from-contact-first-name">Votre prénom :</label>
+                        <label for="from-contact-first-name">
+                            <span class="fas fa-user"></span>
+                            Votre prénom :
+                        </label>
                         <input type="text"
                                name="first-name"
                                id="from-contact-first-name"
@@ -127,7 +139,10 @@
                         />
                     </div>
                 </div>
-                <label for="from-contact-email">Votre adresse e-mail : (*)</label>
+                <label for="from-contact-email">
+                    <span class="fas fa-envelope"></span>
+                    Votre adresse e-mail : (*)
+                </label>
                 <input type="email"
                        name="email"
                        id="from-contact-email"
@@ -136,7 +151,10 @@
                        placeholder="jean@dupont.fr"
                        required
                 />
-                <label for="from-contact-object">L'objet de votre message : (*)</label>
+                <label for="from-contact-object">
+                    <span class="fas fa-tag"></span>
+                    L'objet de votre message : (*)
+                </label>
                 <input type="text"
                        name="object"
                        id="from-contact-object"
@@ -145,7 +163,10 @@
                        placeholder="Ajout d'une fonctionnalité"
                        required
                 />
-                <label for="from-contact-message">Votre message : (*)</label>
+                <label for="from-contact-message">
+                    <span class="fas fa-comment-alt"></span>
+                    Votre message : (*)
+                </label>
                 <textarea
                         name="message"
                         id="from-contact-message"
@@ -167,7 +188,10 @@
             <form action="?" method="POST" class="form-section" enctype="multipart/form-data">
                 <div class="wrapper-no-gap">
                     <div class="col-form">
-                        <label for="from-partition-last-name">Votre nom : (*)</label>
+                        <label for="from-partition-last-name">
+                            <span class="fas fa-user"></span>
+                            Votre nom : (*)
+                        </label>
                         <input type="text"
                                name="last-name"
                                id="from-partition-last-name"
@@ -178,7 +202,10 @@
                         />
                     </div>
                     <div class="col-form">
-                        <label for="from-partition-first-name">Votre prénom :</label>
+                        <label for="from-partition-first-name">
+                            <span class="fas fa-user"></span>
+                            Votre prénom :
+                        </label>
                         <input type="text"
                                name="first-name"
                                id="from-partition-first-name"
@@ -188,7 +215,10 @@
                         />
                     </div>
                 </div>
-                <label for="from-partition-email">Votre adresse e-mail : (*)</label>
+                <label for="from-partition-email">
+                    <span class="fas fa-envelope"></span>
+                    Votre adresse e-mail : (*)
+                </label>
                 <input type="email"
                        name="email"
                        id="from-partition-email"
@@ -197,7 +227,10 @@
                        placeholder="jean@dupont.fr"
                        required
                 />
-                <label for="from-partition-website">Votre site web :</label>
+                <label for="from-partition-website">
+                    <span class="fas fa-link"></span>
+                    Votre site web :
+                </label>
                 <input type="text"
                        name="website"
                        id="from-partition-website"
@@ -207,7 +240,10 @@
                 />
                 <div class="wrapper-no-gap">
                     <div class="col-form">
-                        <label for="from-partition-style">Le style de la partition : (*)</label>
+                        <label for="from-partition-style">
+                            <span class="fas fa-tag"></span>
+                            Le style de la partition : (*)
+                        </label>
                         <select name="style" id="from-partition-style" required class="form-control">
                             <option value="" selected disabled>Choisir un style</option>
                             <option value="0">Pop</option>
@@ -217,17 +253,23 @@
                         </select>
                     </div>
                     <div class="col-form">
-                        <label for="from-partition-difficulty">La difficulté de la partition : (*)</label>
+                        <label for="from-partition-difficulty">
+                            <span class="fas fa-sort-numeric-up-alt"></span>
+                            La difficulté de la partition : (*)
+                        </label>
                         <input type="range"
                                name="difficulty"
                                id="from-partition-difficulty"
                                class="form-control"
-                               min="0"
-                               max="5"
+                               min="1"
+                               max="9"
                         />
                     </div>
                 </div>
-                <label for="from-partition-part-name">Le nom de la chanson : (*)</label>
+                <label for="from-partition-part-name">
+                    <span class="fas fa-tag"></span>
+                    Le nom de la chanson : (*)
+                </label>
                 <input type="text"
                        name="part-name"
                        id="from-partition-part-name"
@@ -236,7 +278,10 @@
                        placeholder="La vie en rose"
                        required
                 />
-                <label for="from-partition-file">Le fichier pdf : (*)</label>
+                <label for="from-partition-file">
+                    <span class="fas fa-file-upload"></span>
+                    Le fichier pdf : (*)
+                </label>
                 <input type="file"
                        name="file"
                        id="from-partition-file"
@@ -343,13 +388,22 @@
                 <span>Lien rapide</span>
                 <ul>
                     <li>
-                        <a href="./">Accueil</a>
+                        <a href="./">
+                            <span class="fas fa-home"></span>
+                            Accueil
+                        </a>
                     </li>
                     <li>
-                        <a href="partition.html">Les partitions</a>
+                        <a href="partition.html">
+                            <span class="fas fa-guitar"></span>
+                            Les partitions
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Nous contacter</a>
+                        <a href="#">
+                            <span class="fas fa-comment-dots"></span>
+                            Nous contacter
+                        </a>
                     </li>
                 </ul>
             </div>
