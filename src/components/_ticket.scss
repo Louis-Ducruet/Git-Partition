@@ -6,7 +6,7 @@
   border-radius: 1rem;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 100%;
   transition: .3s ease-in-out box-shadow;
 
   &:hover {
@@ -36,5 +36,9 @@
       color: var(--primary);
       font-size: 1.5rem;
     }
+  }
+
+  @media screen and (min-width: 20rem) {
+    grid-template-columns: 20% 80%;
   }
 }
