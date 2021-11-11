@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Un site qui regroupe des partitions de guitare opensource.">
     <title>Git-Partition : Partition</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../images/logo.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <header id="header">
     <div class="site-brand">
-        <a href="../../">
-            <img src="../images/logo.svg" alt="Le logo de Git-Partition qui représente une guitare" width="150"
+        <a href="./">
+            <img src="assets/images/logo.svg" alt="Le logo de Git-Partition qui représente une guitare" width="150"
                  height="150">
             <span>Git-Partition</span>
         </a>
@@ -23,13 +26,55 @@
     <nav class="navbar" role="navigation">
         <ul>
             <li>
-                <a href="../../">Accueil</a>
+                <a href="./">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="home-lg" role="img"
+                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                         class="svg-inline--fa fa-home-lg fa-w-18 fa-2x">
+                        <g class="fa-group">
+                            <path fill="currentColor"
+                                  d="M496 512H368a16 16 0 0 1-16-16V368a16 16 0 0 0-16-16h-96a16 16 0 0 0-16 16v128a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V311c1.78-1.21 3.85-1.89 5.47-3.35L288 115l218.74 192.9c1.54 1.38 3.56 2 5.26 3.2V496a16 16 0 0 1-16 16z"
+                                  class="fa-secondary"></path>
+                            <path fill="currentColor"
+                                  d="M527.92 283.88L298.6 81.61a16 16 0 0 0-21.17 0L48.11 283.89a16 16 0 0 1-22.59-1.21L4.1 258.89a16 16 0 0 1 1.21-22.59l256-226a39.85 39.85 0 0 1 53.45 0L416 99.67V48a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v136.43l58.69 51.83a16 16 0 0 1 1.22 22.59l-21.4 23.82a16 16 0 0 1-22.59 1.21z"
+                                  class="fa-primary"></path>
+                        </g>
+                    </svg>
+                    <span>Accueil</span>
+                </a>
             </li>
             <li>
-                <a href="#">Les partitions</a>
+                <a href="#">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="guitar-electric" role="img"
+                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                         class="svg-inline--fa fa-guitar-electric fa-w-16 fa-2x">
+                        <g class="fa-group">
+                            <path fill="currentColor"
+                                  d="M243.76 223.27a39.45 39.45 0 0 1-3.18-38.42l17.29-37.13a18.82 18.82 0 0 0-30.38-21.23l-38.31 38.27a77.49 77.49 0 0 0-18.24 28.83A77.6 77.6 0 0 1 130.42 238L54 273.33C-3.23 296.19-18.4 370 25.16 413.54l73.39 73.33c43.56 43.51 117.45 28.36 140.35-28.78l35.4-76.38a77.64 77.64 0 0 1 44.41-40.48A77.77 77.77 0 0 0 347.57 323l21.57-21.55a19.87 19.87 0 0 0-20.11-33L325.32 276a39.67 39.67 0 0 1-36.76-7.11zm-62.1 171.09l-11.31 11.31a8 8 0 0 1-11.32 0L106.34 353a8 8 0 0 1 0-11.31l11.32-11.31a8 8 0 0 1 11.31 0l52.69 52.68a8 8 0 0 1 0 11.3zm64-64l-11.31 11.31a8 8 0 0 1-11.32 0L170.35 289a8 8 0 0 1 0-11.31l11.31-11.31a8 8 0 0 1 11.31 0l52.69 52.68a8 8 0 0 1 0 11.31z"
+                                  class="fa-secondary"></path>
+                            <path fill="currentColor"
+                                  d="M511.21 39.57a48.12 48.12 0 0 0-37.79-38.26C450.48-3 450.66.79 366.74 54.93A32.15 32.15 0 0 0 352 81.88v33.27L243.81 223.33l44.75 45.6.09.05 173-172.93c.82.06 1.57.35 2.4.35a48 48 0 0 0 47.16-56.83zM129 330.37a8 8 0 0 0-11.31 0l-11.32 11.31a8 8 0 0 0 0 11.31L159 405.67a8 8 0 0 0 11.32 0l11.31-11.31a8 8 0 0 0 0-11.31zm64-64a8 8 0 0 0-11.31 0l-11.31 11.31a8 8 0 0 0 0 11.31L223 341.68a8 8 0 0 0 11.32 0l11.31-11.31a8 8 0 0 0 0-11.31z"
+                                  class="fa-primary"></path>
+                        </g>
+                    </svg>
+                    <span>Les partitions</span>
+                </a>
             </li>
             <li>
-                <a href="contact.html">Nous contacter</a>
+                <a href="contact.html">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="comments-alt" role="img"
+                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                         class="svg-inline--fa fa-comments-alt fa-w-18 fa-2x">
+                        <g class="fa-group">
+                            <path fill="currentColor"
+                                  d="M352 287.9H162.3L79.5 350a9.7 9.7 0 0 1-15.5-7.8V288a64.06 64.06 0 0 1-64-64V64A64.06 64.06 0 0 1 64 0h288a64.06 64.06 0 0 1 64 64v160a63.91 63.91 0 0 1-64 63.9z"
+                                  class="fa-secondary"></path>
+                            <path fill="currentColor"
+                                  d="M576 224v160a64.06 64.06 0 0 1-64 64h-32v54.3a9.7 9.7 0 0 1-15.5 7.8L381.7 448H256a64.06 64.06 0 0 1-64-64v-64h160a96.15 96.15 0 0 0 96-96v-64h64a64.06 64.06 0 0 1 64 64z"
+                                  class="fa-primary"></path>
+                        </g>
+                    </svg>
+                    <span>Nous contacter</span>
+                </a>
             </li>
         </ul>
     </nav>
@@ -39,7 +84,7 @@
         <div class="container">
             <div class="wrapper">
                 <div class="col-illustration">
-                    <img src="../images/bass-illustration.svg" alt="Illustration d'une guitare" width="16"
+                    <img src="assets/images/guitar-illustration.svg" alt="Illustration d'une guitare" width="16"
                          height="16">
                 </div>
                 <div class="col-content">
@@ -48,18 +93,21 @@
                         Envie d'apprendre et de jouer à la perfection un nouveau morceau de musique ? Choisissez une
                         partition des partitions disponible
                     </p>
-                    <a href="#partition-table" class="btn btn-secondary">Les partitions</a>
+                    <a href="#partition-table" class="btn btn-secondary">
+                        <span class="fas fa-music"></span>
+                        Les partitions
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     <section id="partition-type">
         <div class="container">
-            <h2 class="center">Les genres de musique disponible</h2>
+            <h2 class="text-center">Les genres de musique disponible</h2>
             <div class="wrapper">
                 <div class="ticket">
                     <div class="ticket-image">
-                        <img src="../images/logo.svg" alt="Image illustrant le genre musicale">
+                        <img src="assets/images/logo.svg" alt="Image illustrant le genre musicale">
                     </div>
                     <div class="ticket-content">
                         <span>Pop</span>
@@ -71,7 +119,7 @@
                 </div>
                 <div class="ticket">
                     <div class="ticket-image">
-                        <img src="../images/logo.svg" alt="Image illustrant le genre musicale">
+                        <img src="assets/images/logo.svg" alt="Image illustrant le genre musicale">
                     </div>
                     <div class="ticket-content">
                         <span>Classique</span>
@@ -83,7 +131,7 @@
                 </div>
                 <div class="ticket">
                     <div class="ticket-image">
-                        <img src="../images/logo.svg" alt="Image illustrant le genre musicale">
+                        <img src="assets/images/logo.svg" alt="Image illustrant le genre musicale">
                     </div>
                     <div class="ticket-content">
                         <span>Baroque</span>
@@ -96,7 +144,7 @@
                 </div>
                 <div class="ticket">
                     <div class="ticket-image">
-                        <img src="../images/logo.svg" alt="Image illustrant le genre musicale">
+                        <img src="assets/images/logo.svg" alt="Image illustrant le genre musicale">
                     </div>
                     <div class="ticket-content">
                         <span>Révolte</span>
@@ -112,7 +160,7 @@
     </section>
     <section id="partition-table">
         <div class="container">
-            <h2 class="center">Les partitions disponibles</h2>
+            <h2 class="text-center">Les partitions disponibles</h2>
             <div class="responsive-table">
                 <table class="table">
                     <thead>
@@ -467,28 +515,71 @@
 </main>
 <footer id="footer">
     <div class="container">
-        <div class="widget">
+        <div class="footer-widget">
             <div class="column">
                 <span>Nous suivre</span>
                 <ul>
                     <li>
                         <a href="https://www.facebook.com/Git-Partition-No-Account" rel="noopener" target="_blank">
-                            <img src="../images/facebook-icon.svg" alt="Logo de Facebook" width="164" height="164">
+                            <svg height="43.3492mm" width="43.3492mm" viewBox="0 0 258 258" id="svg-facebook">
+                                <g>
+                                    <g>
+                                        <rect class="fil0" height="258" rx="28" ry="28" width="258"/>
+                                        <path class="fil1"
+                                              d="M84 106l27 0 0 -5c0,-8 -1,-18 0,-26 1,-19 11,-31 37,-32l26 1 0 28c-11,0 -30,-4 -32,10l0 24 30 0 -3 31 -27 0 0 78 -31 0 0 -78 -27 -1 0 -30z"/>
+                                        <path class="fil2"
+                                              d="M258 128l-84 -84 0 28c-11,0 -30,-4 -32,10l0 24 30 0 -3 31 -27 0 0 78 -31 0 43 43 76 0 28 -28 0 -102z"/>
+                                    </g>
+                                </g>
+                            </svg>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/Git-Partition-No-Account" rel="noopener" target="_blank">
-                            <img src="../images/instagram-icon.svg" alt="Logo d'Instagram" width="164" height="164">
+                            <svg height="43.3492mm" viewBox="0 0 369 369" width="43.3492mm" id="svg-instagram">
+                                <g>
+                                    <g>
+                                        <rect class="fil0" height="369" rx="40" ry="40" width="369"/>
+                                        <path class="fil1"
+                                              d="M83 172c0,18 -2,92 3,104 2,5 6,10 9,14 8,9 21,13 33,13l115 0c27,0 46,-18 46,-39l0 -92c0,-4 -7,-3 -12,-3l-48 0c1,4 9,17 9,33 0,37 -41,61 -75,45 -14,-7 -25,-21 -28,-38 -3,-14 2,-27 8,-40l-47 0c-5,0 -13,-1 -13,3zm103 58c-7,0 -15,-3 -20,-8 -20,-19 -4,-51 17,-51 18,0 31,9 33,28 1,17 -14,31 -30,31zm-41 -30c0,27 28,50 57,38 38,-17 31,-76 -15,-78 -21,-2 -42,19 -42,40zm-22 -53l-8 0 0 -49c-3,0 -6,0 -6,4l0 45 -8 0 0 -42c-11,3 -18,23 -18,37 0,14 -2,22 3,22l61 0c1,0 13,-9 16,-10 7,-3 14,-5 20,-5 9,-1 17,1 25,4 30,15 -10,11 81,11l0 -28c0,-21 -19,-39 -40,-39l-112 0 0 50 -8 0 0 -50 -6 0 0 50zm121 -33l18 0c4,0 8,4 8,8l0 18c0,4 -4,7 -8,7l-18 0c-4,0 -7,-3 -7,-7l0 -18c0,-4 3,-8 7,-8z"/>
+                                        <path class="fil2"
+                                              d="M216 199c-2,-19 -15,-28 -33,-28 -21,0 -37,32 -17,51 5,5 13,8 20,8 16,0 31,-14 30,-31z"/>
+                                        <path class="fil2"
+                                              d="M225 189c5,18 -2,40 -23,49 -15,6 -29,3 -40,-5l19 19c28,2 56,-18 57,-48l-13 -15z"/>
+                                        <path class="fil2"
+                                              d="M289 172l0 92c0,21 -19,39 -46,39l-115 0c-11,0 -23,-4 -31,-11l78 77 154 0 40 -40 0 -127 -86 -86c3,6 6,13 6,20l0 28c-91,0 -51,4 -81,-11 -6,-2 -12,-4 -18,-4l12 14c12,5 20,15 23,26l13 15c0,-1 0,-1 0,-2 0,-16 -8,-29 -9,-33l48 0c5,0 12,-1 12,3z"/>
+                                        <path class="fil2"
+                                              d="M244 147l18 0c4,0 8,-3 8,-7l0 -18c0,-4 -4,-8 -8,-8l-18 0c-4,0 -7,4 -7,8l0 18c0,4 3,7 7,7z"/>
+                                    </g>
+                                </g>
+                            </svg>
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/Git-Partition-No-Account" rel="noopener" target="_blank">
-                            <img src="../images/twitter-icon.svg" alt="Logo de Twitter" width="164" height="164">
+                            <svg height="43.3492mm" viewBox="0 0 306 306" width="43.3492mm" id="svg-twitter">
+                                <g>
+                                    <g>
+                                        <rect class="fil0" height="306" rx="33" ry="33" width="306"/>
+                                        <path class="fil1"
+                                              d="M152 122c-31,-2 -61,-13 -86,-43 -11,18 -5,42 13,55 -6,0 -13,-2 -19,-5 1,21 12,34 33,41 -6,1 -12,2 -18,1 5,16 17,27 38,28 -16,14 -36,20 -61,18 74,46 180,4 181,-105 8,-6 15,-13 21,-22 -7,3 -15,6 -23,7 9,-6 14,-14 17,-23 -8,5 -16,8 -26,10 -35,-32 -79,2 -70,38z"/>
+                                        <path class="fil2"
+                                              d="M306 131l-58 -57c-3,9 -8,17 -17,23 8,-1 16,-4 23,-7 -6,9 -13,16 -21,22 -1,109 -107,151 -181,105l90 89 131 0 33 -33 0 -142z"/>
+                                    </g>
+                                </g>
+                            </svg>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Louis-Ducruet/Git-Partition" rel="noopener" target="_blank">
-                            <img src="../images/github-icon.svg" alt="Logo de GitHub" width="72" height="72">
+                            <svg height="72" viewBox="0 0 72 72" width="72" id="svg-github">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
+                                          class="fil0"/>
+                                    <path d="M35.9985,12 C22.746,12 12,22.7870921 12,36.096644 C12,46.7406712 18.876,55.7718301 28.4145,58.9584121 C29.6145,59.1797862 30.0525,58.4358488 30.0525,57.7973276 C30.0525,57.2250681 30.0315,55.7100863 30.0195,53.6996482 C23.343,55.1558981 21.9345,50.4693938 21.9345,50.4693938 C20.844,47.6864054 19.2705,46.9454799 19.2705,46.9454799 C17.091,45.4500754 19.4355,45.4801943 19.4355,45.4801943 C21.843,45.6503662 23.1105,47.9634994 23.1105,47.9634994 C25.2525,51.6455377 28.728,50.5823398 30.096,49.9649018 C30.3135,48.4077535 30.9345,47.3460615 31.62,46.7436831 C26.2905,46.1352808 20.688,44.0691228 20.688,34.8361671 C20.688,32.2052792 21.6225,30.0547881 23.1585,28.3696344 C22.911,27.7597262 22.0875,25.3110578 23.3925,21.9934585 C23.3925,21.9934585 25.4085,21.3459017 29.9925,24.4632101 C31.908,23.9285993 33.96,23.6620468 36.0015,23.6515052 C38.04,23.6620468 40.0935,23.9285993 42.0105,24.4632101 C46.5915,21.3459017 48.603,21.9934585 48.603,21.9934585 C49.9125,25.3110578 49.089,27.7597262 48.8415,28.3696344 C50.3805,30.0547881 51.309,32.2052792 51.309,34.8361671 C51.309,44.0917119 45.6975,46.1292571 40.3515,46.7256117 C41.2125,47.4695491 41.9805,48.9393525 41.9805,51.1877301 C41.9805,54.4089489 41.9505,57.0067059 41.9505,57.7973276 C41.9505,58.4418726 42.3825,59.1918338 43.6005,58.9554002 C53.13,55.7627944 60,46.7376593 60,36.096644 C60,22.7870921 49.254,12 35.9985,12"
+                                          class="fil1"/>
+                                </g>
+                            </svg>
                         </a>
                     </li>
                 </ul>
@@ -503,20 +594,32 @@
                            class="form-control"
                            placeholder="jean@dupont.fr"
                            required>
-                    <button type="submit" class="btn btn-outline-primary">S'inscrire</button>
+                    <button type="submit" class="btn btn-outline-primary btn-center">
+                        <span class="fas fa-sign-in-alt"></span>
+                        S'inscrire
+                    </button>
                 </form>
             </div>
             <div class="column">
                 <span>Lien rapide</span>
                 <ul>
                     <li>
-                        <a href="../../">Accueil</a>
+                        <a href="./">
+                            <span class="fas fa-home"></span>
+                            Accueil
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Les partitions</a>
+                        <a href="#">
+                            <span class="fas fa-guitar"></span>
+                            Les partitions
+                        </a>
                     </li>
                     <li>
-                        <a href="contact.html">Nous contacter</a>
+                        <a href="contact.html">
+                            <span class="fas fa-comment-dots"></span>
+                            Nous contacter
+                        </a>
                     </li>
                 </ul>
             </div>

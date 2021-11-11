@@ -1,0 +1,64 @@
+.navbar {
+  display: none;
+}
+
+@media screen and (min-width: 30rem) {
+  .navbar {
+    display: block;
+    flex-grow: 1;
+    margin-left: 3rem;
+
+    ul {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 1rem;
+      align-content: center;
+      align-items: center;
+
+      li {
+        list-style: none;
+
+        a {
+          display: flex;
+          align-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: inherit;
+          font-size: 1.3rem;
+          transform: scale(1);
+          transition: .3s ease-in-out all;
+
+          &:hover {
+            transform: scale(0.95);
+            transition: .3s ease-in-out all;
+          }
+
+          svg {
+            display: inline-block;
+            margin-right: 0.5rem;
+            height: 2rem;
+            width: auto;
+
+            .fa-primary {
+              color: var(--secondary);
+            }
+
+            .fa-secondary {
+              color: var(--primary);
+            }
+          }
+
+          span {
+            display: none;
+            @media screen and (min-width: 52rem) {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

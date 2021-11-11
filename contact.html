@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Un site qui regroupe des partitions de guitare opensource.">
-    <title>Git-Partition</title>
+    <title>Git-Partition : Nous contacter</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 <body>
 <header id="header">
     <div class="site-brand">
-        <a href="#">
+        <a href="./">
             <img src="assets/images/logo.svg" alt="Le logo de Git-Partition qui représente une guitare" width="150"
                  height="150">
             <span>Git-Partition</span>
@@ -26,7 +26,7 @@
     <nav class="navbar" role="navigation">
         <ul>
             <li>
-                <a href="#">
+                <a href="./">
                     <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="home-lg" role="img"
                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
                          class="svg-inline--fa fa-home-lg fa-w-18 fa-2x">
@@ -60,7 +60,7 @@
                 </a>
             </li>
             <li>
-                <a href="contact.html">
+                <a href="#">
                     <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="comments-alt" role="img"
                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
                          class="svg-inline--fa fa-comments-alt fa-w-18 fa-2x">
@@ -80,203 +80,220 @@
     </nav>
 </header>
 <main>
-    <section id="home-hero">
+    <section id="contact-hero">
         <div class="container">
             <div class="wrapper">
                 <div class="col-illustration">
-                    <img src="assets/images/bass-illustration.svg" alt="Illustration d'une guitare" width="16"
+                    <img src="assets/images/contact-illustration.svg" alt="Illustration d'une guitare" width="16"
                          height="16">
                 </div>
                 <div class="col-content">
-                    <h1>Le bon endroit pour trouver des partitions pour guitare.</h1>
+                    <h1>Une partition à proposer, une autre demande, vous êtes au bon endroit.</h1>
                     <p>
-                        Savoir lire une partition est vital pour pouvoir être libre de jouer la musique qui vous plaît,
-                        En effet, vous pouvez ainsi jouer une partition d'un instrument sur un autre sans grandes
-                        difficultés. C'est pour cela que nous vous conseillons de regarder cette vidéo et de vous
-                        exercer régulièrement chez vous pour avoir des automatismes.
+                        Vous avez un message à nous transmettre, une partition à nous soumettre. Remplissez le bon
+                        formulaire et nous vous répondrons dans les plus brefs délais.
                     </p>
-                    <a href="partition.html" class="btn btn-secondary">
-                        <span class="fas fa-music"></span>
-                        Voir les partitions
+                    <a href="#contact-form-contact" class="btn btn-outline-secondary">
+                        <span class="fas fa-comment-dots"></span>
+                        Nous contacter
+                    </a>
+                    <a href="#contact-form-partition" class="btn btn-secondary">
+                        <span class="fas fa-file-alt"></span>
+                        Une partition ?
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <section id="home-new-partition">
+    <section id="contact-form-contact">
         <div class="container">
-            <h2 class="text-center">Nos nouvelles partitions</h2>
-            <div class="wrapper">
-                <div class="card">
-                    <div class="card-content">
-                        <span>Perfect</span>
-                        <p>
-                            Perfect est une chanson du chanteur anglais Ed Sheeran, sortie le 26 septembre 2017.
-                        </p>
-                        <span>Difficulté : 3/5</span>
-                        <span>Genre : Pop</span>
-                        <span>Site : flat.io</span>
-                        <a href="https://drive.google.com/file/d/1_AAQ2hUuV9cIsykB0yki8Xmq8b_L0Tob/view" rel="noopener"
-                           target="_blank" class="btn btn-outline-secondary btn-center">
-                            <span class="fas fa-music"></span>
-                            Voir la partition
-                            <span class="fas fa-music"></span>
-                        </a>
+            <h2 class="text-center">Nous contacter</h2>
+            <p>(*) : Ce champ est un champ obligatoire.</p>
+            <form action="?" method="POST" class="form-section">
+                <div class="wrapper-no-gap">
+                    <div class="col-form">
+                        <label for="from-contact-last-name">
+                            <span class="fas fa-user"></span>
+                            Votre nom : (*)
+                        </label>
+                        <input type="text"
+                               name="last-name"
+                               id="from-contact-last-name"
+                               class="form-control"
+                               value=""
+                               placeholder="Dupont"
+                               required
+                        />
+                    </div>
+                    <div class="col-form">
+                        <label for="from-contact-first-name">
+                            <span class="fas fa-user"></span>
+                            Votre prénom :
+                        </label>
+                        <input type="text"
+                               name="first-name"
+                               id="from-contact-first-name"
+                               class="form-control"
+                               value=""
+                               placeholder="Jean"
+                        />
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <span>Vivo per lei</span>
-                        <p>
-                            Vivo per lei est une chanson du tenor italien Andrea Bocelli, sortie en 1995.
-                        </p>
-                        <span>Difficulté : 3/5</span>
-                        <span>Genre : Amour</span>
-                        <span>Site : ultimate-guitar.com</span>
-                        <a href="https://drive.google.com/file/d/1op0_QFp-kDEHcEDByLI-aaxyR7Jfgw_j/view" rel="noopener"
-                           target="_blank" class="btn btn-outline-secondary btn-center">
-                            <span class="fas fa-music"></span>
-                            Voir la partition
-                            <span class="fas fa-music"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content card-content-t2">
-                        <span>Sonate au clair de Lune</span>
-                        <p>
-                            La Sonate nᵒ 14 en do dièse mineur, opus 27 nᵒ2 surnommé "Sonate au clair de Lune" est une
-                            chanson du compositeur allemand Ludwig van Beethoven, publiée en 1802.
-                        </p>
-                        <span>Difficulté : 4/5</span>
-                        <span>Genre : Classique</span>
-                        <span>Site : free-scores.com</span>
-                        <a href="https://drive.google.com/file/d/1SG-Jv7osEeUHsDt4yOaUDZmK-keh3_Tx/view" rel="noopener"
-                           target="_blank" class="btn btn-outline-secondary btn-center">
-                            <span class="fas fa-music"></span>
-                            Voir la partition
-                            <span class="fas fa-music"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <label for="from-contact-email">
+                    <span class="fas fa-envelope"></span>
+                    Votre adresse e-mail : (*)
+                </label>
+                <input type="email"
+                       name="email"
+                       id="from-contact-email"
+                       class="form-control"
+                       value=""
+                       placeholder="jean@dupont.fr"
+                       required
+                />
+                <label for="from-contact-object">
+                    <span class="fas fa-tag"></span>
+                    L'objet de votre message : (*)
+                </label>
+                <input type="text"
+                       name="object"
+                       id="from-contact-object"
+                       class="form-control"
+                       value=""
+                       placeholder="Ajout d'une fonctionnalité"
+                       required
+                />
+                <label for="from-contact-message">
+                    <span class="fas fa-comment-alt"></span>
+                    Votre message : (*)
+                </label>
+                <textarea
+                        name="message"
+                        id="from-contact-message"
+                        class="form-control"
+                        required
+                        rows="10"
+                ></textarea>
+                <button type="submit" class="btn btn-primary btn-center">
+                    <span class="fas fa-paper-plane"></span>
+                    Envoyer votre message
+                </button>
+            </form>
         </div>
     </section>
-    <section id="home-ytb-video">
+    <section id="contact-form-partition">
         <div class="container">
-            <div class="wrapper">
-                <div class="col-content">
-                    <h2>Comment lire une partition ?</h2>
-                    <p>
-                        Savoir lire une partition est vital pour pouvoir être libre de jouer la musique qu'y vous plait,
-                        En effet, vous pouvez ainsi jouer une partition d'un instrument sur un autre sans grande
-                        difficulté. C'est pour cela que nous vous conseillons de regarder cette vidéo et de vous exercer
-                        régulièrement chez vous pour avoir des automatismes.
-                    </p>
-                </div>
-                <div class="col-illustration">
-                    <div class="ytb-video">
-                        <iframe width="560" height="315"
-                                src="https://www.youtube-nocookie.com/embed/CRljjM-mTGM?controls=2&fs=0&rel=0&modestbranding=1&iv_load_policy=3"
-                                title="Vidéo Youtube pour apprendre à lire une partition"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        ></iframe>
+            <h2 class="text-center">Une partition à proposer ?</h2>
+            <p>(*) : Ce champ est un champ obligatoire.</p>
+            <form action="?" method="POST" class="form-section" enctype="multipart/form-data">
+                <div class="wrapper-no-gap">
+                    <div class="col-form">
+                        <label for="from-partition-last-name">
+                            <span class="fas fa-user"></span>
+                            Votre nom : (*)
+                        </label>
+                        <input type="text"
+                               name="last-name"
+                               id="from-partition-last-name"
+                               class="form-control"
+                               value=""
+                               placeholder="Dupont"
+                               required
+                        />
+                    </div>
+                    <div class="col-form">
+                        <label for="from-partition-first-name">
+                            <span class="fas fa-user"></span>
+                            Votre prénom :
+                        </label>
+                        <input type="text"
+                               name="first-name"
+                               id="from-partition-first-name"
+                               class="form-control"
+                               value=""
+                               placeholder="Jean"
+                        />
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="home-guitar-type">
-        <div class="container">
-            <h2 class="text-center">Les différents types de guitare</h2>
-            <div class="wrapper">
-                <div class="ticket">
-                    <div class="ticket-image">
-                        <img src="assets/images/logo.svg" alt="Image illustrant le genre musicale">
+                <label for="from-partition-email">
+                    <span class="fas fa-envelope"></span>
+                    Votre adresse e-mail : (*)
+                </label>
+                <input type="email"
+                       name="email"
+                       id="from-partition-email"
+                       class="form-control"
+                       value=""
+                       placeholder="jean@dupont.fr"
+                       required
+                />
+                <label for="from-partition-website">
+                    <span class="fas fa-link"></span>
+                    Votre site web :
+                </label>
+                <input type="text"
+                       name="website"
+                       id="from-partition-website"
+                       class="form-control"
+                       value=""
+                       placeholder="www.google.com"
+                />
+                <div class="wrapper-no-gap">
+                    <div class="col-form">
+                        <label for="from-partition-style">
+                            <span class="fas fa-tag"></span>
+                            Le style de la partition : (*)
+                        </label>
+                        <select name="style" id="from-partition-style" required class="form-control">
+                            <option value="" selected disabled>Choisir un style</option>
+                            <option value="0">Pop</option>
+                            <option value="1">Classique</option>
+                            <option value="2">Baroque</option>
+                            <option value="3">Révolte</option>
+                        </select>
                     </div>
-                    <div class="ticket-content">
-                        <span>Classique</span>
-                        <p>
-                            C'est le modèle le plus courant, comportant trois cordes aiguës généralement en nylon et
-                            trois cordes basses en soie, filées et gainées de métal.
-                        </p>
-                    </div>
-                </div>
-                <div class="ticket">
-                    <div class="ticket-image">
-                        <img src="assets/images/logo.svg" alt="Image illustrant le genre musicale">
-                    </div>
-                    <div class="ticket-content">
-                        <span>Folk</span>
-                        <p>
-                            Elle a été longtemps l'instrument privilégié pour accompagner la musique folk américaine.
-                            Elle est équipée de six cordes métalliques donnant un volume sonore plus important.
-                        </p>
-                    </div>
-                </div>
-                <div class="ticket">
-                    <div class="ticket-image">
-                        <img src="assets/images/logo.svg" alt="Image illustrant le genre musicale">
-                    </div>
-                    <div class="ticket-content">
-                        <span>Flamenco</span>
-                        <p>
-                            Surtout employée par les musiciens de Flamenco, cette guitare ressemble à une guitare
-                            classique (et en a les principales caractéristiques), mais est plus fine et légèrement plus
-                            petite.
-                        </p>
-                    </div>
-                </div>
-                <div class="ticket">
-                    <div class="ticket-image">
-                        <img src="assets/images/logo.svg" alt="Image illustrant le genre musicale">
-                    </div>
-                    <div class="ticket-content">
-                        <span>Manouche</span>
-                        <p>
-                            Plus massive qu'une guitare folk, avec des cordes plus tendues et fixées à la caisse par un
-                            cordier métallique selon un mode plus proche du violon que des guitares folks ou classique.
-                        </p>
+                    <div class="col-form">
+                        <label for="from-partition-difficulty">
+                            <span class="fas fa-sort-numeric-up-alt"></span>
+                            La difficulté de la partition : (*)
+                        </label>
+                        <input type="range"
+                               name="difficulty"
+                               id="from-partition-difficulty"
+                               class="form-control"
+                               min="1"
+                               max="5"
+                        />
                     </div>
                 </div>
-                <div class="ticket">
-                    <div class="ticket-image">
-                        <img src="assets/images/logo.svg" alt="Image illustrant le genre musicale">
-                    </div>
-                    <div class="ticket-content">
-                        <span>A résonateur</span>
-                        <p>
-                            Le résonateur donne un son puissant et spécifique à son système d'amplification et un aspect
-                            caractéristique. Ces guitares sont utilisées notamment dans le Blues et la Country.
-                        </p>
-                    </div>
-                </div>
-                <div class="ticket">
-                    <div class="ticket-image">
-                        <img src="assets/images/logo.svg" alt="Image illustrant le genre musicale">
-                    </div>
-                    <div class="ticket-content">
-                        <span>Électro-acoustique</span>
-                        <p>
-                            Il s'agit d'une guitare acoustique équipée d'un capteur, ce qui permet de jouer amplifié,
-                            comme avec une guitare électrique.
-                        </p>
-                    </div>
-                </div>
-                <div class="ticket">
-                    <div class="ticket-image">
-                        <img src="assets/images/logo.svg" alt="Image illustrant le genre musicale">
-                    </div>
-                    <div class="ticket-content">
-                        <span>Électrique</span>
-                        <p>
-                            Instrument de musique électromécanique, il produit des sons grâce à des cordes vibrantes
-                            métalliques, des capteurs électromagnétiques, un amplificateur électronique et un
-                            haut-parleur.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                <label for="from-partition-part-name">
+                    <span class="fas fa-tag"></span>
+                    Le nom de la chanson : (*)
+                </label>
+                <input type="text"
+                       name="part-name"
+                       id="from-partition-part-name"
+                       class="form-control"
+                       value=""
+                       placeholder="La vie en rose"
+                       required
+                />
+                <label for="from-partition-file">
+                    <span class="fas fa-file-upload"></span>
+                    Le fichier pdf : (*)
+                </label>
+                <input type="file"
+                       name="file"
+                       id="from-partition-file"
+                       class="form-control"
+                       accept="application/pdf"
+                       required
+                />
+                <button type="submit" class="btn btn-secondary btn-center">
+                    <span class="fas fa-file-import"></span>
+                    Proposer votre partition
+                </button>
+            </form>
         </div>
     </section>
 </main>
@@ -371,7 +388,7 @@
                 <span>Lien rapide</span>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="./">
                             <span class="fas fa-home"></span>
                             Accueil
                         </a>
@@ -383,7 +400,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="#">
                             <span class="fas fa-comment-dots"></span>
                             Nous contacter
                         </a>

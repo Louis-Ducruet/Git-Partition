@@ -1,0 +1,32 @@
+.wrapper,
+.wrapper-no-gap {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .col-illustration {
+    max-width: 24rem;
+    width: 100%;
+  }
+
+  .col-content {
+    max-width: 40rem;
+    width: 100%;
+  }
+
+  .col-form {
+    width: 100%;
+
+    @media screen and (min-width: 76rem) {
+      max-width: 35rem;
+    }
+  }
+}
+
+.wrapper {
+  column-gap: 1rem;
+  row-gap: 1rem;
+  justify-content: space-evenly;
+}

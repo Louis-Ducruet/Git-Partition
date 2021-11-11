@@ -1,0 +1,14 @@
+section {
+  padding: 4.5rem 0;
+  background-color: var(--primary);
+  color: var(--background);
+
+  &:nth-child(2n) {
+    background-color: var(--background);
+    color: var(--text-color);
+  }
+
+  &:first-child p {
+    font-size: 1.2rem;
+  }
+}
