@@ -32,6 +32,10 @@
             color: var(--primary);
           }
 
+          span.hidden {
+            display: none;
+          }
+
           svg {
             width: 3rem;
             height: auto;

@@ -1,5 +1,9 @@
 # Git-Partition versions
 
+## Release V1.1
+
+Improvement of the light theme and the accessibility of the website.
+
 ## Release V1.0
 
 Switching from css to scss without using a specific sass function.
