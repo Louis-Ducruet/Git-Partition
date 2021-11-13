@@ -1,5 +1,9 @@
 # Git-Partition versions
 
+## Release V1.2
+
+Improved visual appearance, spellchecking and transfer guitar illustration from images to the html files
+
 ## Release V1.1
 
 Improvement of the light theme and the accessibility of the website.
